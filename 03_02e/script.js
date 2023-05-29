@@ -1,9 +1,9 @@
-class Singleton {
+class UniqueClass {
   constructor(data) {
-    if (Singleton.instance) {
-      return Singleton.instance;
+    if (UniqueClass.instance) {
+      return UniqueClass.instance;
     }
-    Singleton.instance = this;
+    UniqueClass.instance = this;
     this.data = data;
   }
 
@@ -12,11 +12,11 @@ class Singleton {
   }
 }
 
-const instance1 = new Singleton(
-  "Data for the first instance of the singleton."
+const instance1 = new UniqueClass(
+  "Data for the first instance of the UniqueClass."
 );
-const instance2 = new Singleton(
-  "The second instance of the singleton should not be set."
+const instance2 = new UniqueClass(
+  "The second instance of the UniqueClass should not be set."
 );
 
 // Freeze the instance to prevent changes.
@@ -24,5 +24,5 @@ Object.freeze(instance1);
 
 instance1.data = "something new"; // This will not change the data.
 
-console.log(instance1.getData()); // "Data for the Singleton"
-console.log(instance2.getData()); // "Data for the Singleton"
+console.log(instance1.getData()); // "Data for the UniqueClass"
+console.log(instance2.getData()); // "Data for the UniqueClass"

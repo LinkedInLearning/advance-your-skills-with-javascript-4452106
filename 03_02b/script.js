@@ -1,4 +1,4 @@
-class Singleton {
+class UniqueClass {
   constructor(data) {
     this.data = data;
   }
@@ -8,12 +8,13 @@ class Singleton {
   }
 }
 
-const instance1 = new Singleton(
-  "Data for the first instance of the singleton."
-);
-const instance2 = new Singleton(
-  "The second instance of the singleton should not be set."
+const instance1 = new UniqueClass(
+  "Data for the first instance of the UniqueClass."
 );
 
-console.log(instance1.getData()); // "Data for the Singleton"
-console.log(instance2.getData()); // "Data for the Singleton"
+const instance2 = new UniqueClass(
+  "The second instance of the UniqueClass should not be set."
+);
+
+console.log(instance1.getData()); // "Data for the UniqueClass"
+console.log(instance2.getData()); // "Data for the UniqueClass"
