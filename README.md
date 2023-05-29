@@ -16,7 +16,9 @@ Some folders will have a beginning and an end state. These are marked with the l
 
 Each chapter in this course contains two coding challenges. The challenges themselves are powered by CoderPad and appear in the video player as you progress through the course. For each challenge there is a solution video where the instructor walks through the solution.
 
-Stand-alone examples of solutions to each challenge are also available in this repository. They are found under the `solutions` folder following the same naming convention as above. As an example, the solution video for the first challenge in chapter 2 is named `02_05_solution`.
+### Coding challenge solutions
+
+Stand-alone examples of solutions to each challenge are available in this repository. They are found under the `/solutions` folder following the same naming convention as above. As an example, a proposed solution for the first challenge in chapter 2 is named `/02_04_solution/solution.js`.
 
 ## Installing
 
