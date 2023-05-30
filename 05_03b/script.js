@@ -44,6 +44,10 @@ const alertTemperature = (monitor) => {
     console.log(
       `WARNING: It's ${monitor.temperature}°C. It's uncomfortably hot!`
     );
+  } else {
+    console.log(
+      `The temperature is ${monitor.temperature}°C.`
+    );
   }
 };
 
