@@ -1,3 +1,81 @@
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+
+/**
+ * Helper function to output properly indented HTML in the console.
+ */
+const generateHtmlString = (element, indent = 0) => {
+  let html = "";
+  const indentation = " ".repeat(indent * 2);
+
+  // Opening tag
+  html += `${indentation}<${element.tagName.toLowerCase()}`;
+
+  // Attributes
+  Array.from(element.attributes).forEach((attr) => {
+    html += ` ${attr.name}="${attr.value}"`;
+  });
+
+  html += ">";
+
+  // Text content
+  if (element.childNodes.length === 1 && element.childNodes[0].nodeType === 3) {
+    // Only text content
+    html += element.childNodes[0].textContent.trim();
+  } else {
+    // Children
+    const children = Array.from(element.children);
+    if (children.length > 0) {
+      html += "\n";
+
+      children.forEach((child) => {
+        html += generateHtmlString(child, indent + 1);
+      });
+
+      html += `${indentation}`;
+    }
+  }
+
+  // Closing tag
+  html += `</${element.tagName.toLowerCase()}>\n`;
+
+  return html;
+};
+
+/**
+ * Scaffolding to provide a node-based DOM to work with.
+ * @returns
+ */
+// Create promise-based ad-hoc DOM.
+function setupJSDOM() {
+  return new Promise((resolve) => {
+    const dom = new JSDOM(
+      `<!DOCTYPE html><header class="siteheader"></header>`
+    );
+    const document = dom.window.document;
+    resolve(document);
+  });
+}
+
+// BEGIN async function to make `document` available in candidate answer code.
+const runScript = () =>
+  setupJSDOM()
+    .then((document) => {
+      const rootComments = restructureComments(comments);
+      const result = generateNestedList(rootComments, document);
+      console.log(generateHtmlString(result));
+    })
+
+    .catch((error) => {
+      console.error(error);
+    });
+
+// Run the async function.
+runScript();
+
+/**
+ * The actual coding challenge solution:
+ */
 const comments = [
   {
     comment_ID: 1,
@@ -126,8 +204,3 @@ function generateNestedList(comments, document) {
 
   return ul;
 }
-
-const rootComments = restructureComments(comments);
-const result = generateNestedList(rootComments, document);
-
-console.log(result);
