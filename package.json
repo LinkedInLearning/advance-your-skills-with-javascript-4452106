@@ -1,0 +1,26 @@
+{
+  "name": "advance-your-skills-with-javascript-4452106",
+  "version": "1.0.0",
+  "description": "Exercise files for the LinkedIn Learning course \"Advance Your Skills with JavaScript\".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinkedInLearning/advance-your-skills-with-javascript-4452106.git"
+  },
+  "author": "@mor10",
+  "license": "SEE LICENSE IN `LICENSE`.",
+  "bugs": {
+    "url": "https://github.com/LinkedInLearning/advance-your-skills-with-javascript-4452106/issues"
+  },
+  "homepage": "https://github.com/LinkedInLearning/advance-your-skills-with-javascript-4452106#readme",
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8"
+  }
+}
