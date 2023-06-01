@@ -25,6 +25,7 @@ Stand-alone examples of solutions to each challenge are available in this reposi
 1. To use these exercise files, you must have the following installed:
    - Node.js
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
+3. To run the solutions in the `/solutions` folder, open terminal, navigate to the correct folder, and run `node solution.js`.
 
 [0]: # "Replace these placeholder URLs with actual course URLs"
 [lil-course-url]: https://www.linkedin.com/learning/
