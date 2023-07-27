@@ -208,6 +208,7 @@ const result = () => {
   console.log(librarian.suspendUser(library, "Maiken")); // Maiken is suspended and cannot borrow books.
   console.log(user002.loanBook(library, book02.title)); // Book titled "Annihilation" not found.
   console.log(user001.loanBook(library, "Annihilation")); // Book titled "Annihilation" not found.
+  return ""
 };
 
 console.log(result());
