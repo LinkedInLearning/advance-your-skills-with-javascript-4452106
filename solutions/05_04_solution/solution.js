@@ -72,12 +72,7 @@ const tallyCart = (cart) => {
     pst: cart.pst.toFixed(2),
     sumTotal: cart.sumTotal.toFixed(2),
   };
-  console.log(`
-Total: ${tally.totalBeforeTax}
-GST: ${tally.gst}
-PST: ${tally.pst}
------------------
-Sum total: ${tally.sumTotal}`);
+
   runningTally.push(tally);
 };
 
@@ -89,6 +84,7 @@ const itemArray = [
   { name: "Item 1", price: 19.99 },
   { name: "Item 2", price: 29.99 },
   { name: "Item 3", price: 5.29 },
+  { name: "Item 4", price: 9.99 },
 ];
 
 // Iterate through itemArray and add items to the cart
