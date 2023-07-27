@@ -113,6 +113,7 @@ const result = () => {
   console.log(library.findBook("Odyssey")); // Book titled "Odyssey" is in the library
   console.log(library.findBook("Silo")); // Book titled "Silo" not found.
   console.log(library.removeBook("Odyssey")); // Book "Odyssey" removed. There are now 2 books in the library.
+  return "";
 };
 
 console.log(result());
