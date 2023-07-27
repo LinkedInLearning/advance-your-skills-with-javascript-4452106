@@ -61,6 +61,7 @@ function runWeatherStation() {
   // Unsubscribe display 1
   results.push(weatherStation.removeObserver(display1));
   results.push(weatherStation.setTemperature(22));
+  results.push(weatherStation.setTemperature(58));
 
   return results;
 }
