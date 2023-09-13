@@ -1,10 +1,13 @@
-# COURSENAME
+# JavaScript: Five Advanced Challenges and Concepts
+This is the repository for the LinkedIn Learning course JavaScript: Five Advanced Challenges and Concepts. The full course is available from [LinkedIn Learning][lil-course-url].
 
-This is the repository for the LinkedIn Learning course `Advance Your Skills with JavaScript`. The full course is available from [LinkedIn Learning][lil-course-url].
+![JavaScript: Five Advanced Challenges and Concepts][lil-thumbnail-url] 
 
-![course-name-alt-text][lil-thumbnail-url]
+When you’re learning JavaScript, you rarely get time to really dig into the more complex aspects of the language. Until now! This hybrid course mixes learning and hands-on practice with interactive coding challenges. Instructor Morten Rand-Hendriksen guides you through five advanced topics in JavaScript development: turning flat arrays into nested arrays, extending classes, using singletons and proxies, creating observable objects, and building robust applications with the reactive object pattern. Each chapter presents you with a basic introduction, two hands-on examples, and two coding challenges to solidify your learning. Advancing your skills in JavaScript means pushing yourself to go beyond the basics, and Morten shows you how to get it right.
 
-_See the readme file in the main branch for updated instructions and information._
+
+ 
+This course includes Code Challenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on coding practice alongside the course content to advance your programming skills.
 
 ## Instructions
 
@@ -27,6 +30,15 @@ Stand-alone examples of solutions to each challenge are available in this reposi
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
 3. To run the solutions in the `/solutions` folder, open terminal, navigate to the correct folder, and run `node solution.js`.
 
-[0]: # "Replace these placeholder URLs with actual course URLs"
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+### Instructor
+
+Morten Rand-Hendriksen 
+                            
+Developer and Senior Staff Instructor
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/morten-rand-hendriksen).
+
+[lil-course-url]: https://www.linkedin.com/learning/javascript-five-advanced-challenges-and-concepts?dApp=59033956&leis=LAA
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQEcH-wHrMMtCg/learning-public-crop_675_1200/0/1692902498364?e=2147483647&v=beta&t=kYWP2z8PmLY27msUIo3s2vnmR3kcoR_kGVTlSjiK0JY
